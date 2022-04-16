@@ -1,0 +1,78 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+
+header{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 400;
+    background: url('https://cdn.pixabay.com/photo/2022/03/01/06/14/plum-7040627__340.jpg') bottom no-repeat;
+    background-size: cover;
+}
+
+h1{
+    color: rgb(182, 236, 56);
+    font-size: 4rem;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.news{
+    background-color: aliceblue;
+    padding: 50px 0 32px;
+}
+
+article{
+    width: 768;
+    margin: 0 auto 32px;
+    padding: 6px 15px;
+    border-bottom: 1px solid rgb(128, 128, 128);
+}
+
+article a{
+    color: rgb(33, 37, 41);
+    text-decoration: none;
+}
+
+article a:hover{
+    color: #0085a1;
+}
+
+article h2{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin-bottom: 5px;
+}
+
+.article-meta{
+    color: rgb(134, 142, 150);
+    margin-bottom: 5px;
+}
+
+article img{
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+}
+
+footer{
+    padding-top: 20;
+    padding-bottom: 60;
+    text-align: center;
+}
+footer .links{
+    margin-bottom: 50;
+}
+footer .links > a{
+color: #636363;
+padding: 0 25;
+font-size: 13;
+font-weight: 600;
+letter-spacing: 1rem;
+text-decoration: none;
+text-transform: uppercase;
+}
+.copyright{
+    color: rgb(108,117,125);
+    font-family: 'Times New Roman', Times, serif;
+}

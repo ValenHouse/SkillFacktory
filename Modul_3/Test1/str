@@ -1,0 +1,11 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Моя первая веб-страница</title>
+</head>
+<body>
+    <h1>Моя первая веб-страница</h1>
+    <p>Текст параграфа, который увидит пользователь</p>
+</body>
+</html>
