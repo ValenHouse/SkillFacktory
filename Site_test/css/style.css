@@ -1,0 +1,34 @@
+body {
+    background-color: antiquewhite;
+    <!--"селектор элемента тега"-->
+}
+
+#about {
+    padding: 10px;
+    border: 2px solid black;
+    <!--"селектор индентификатора"-->
+}
+
+.more{
+    color: darkorange;
+    text-decoration: none;
+    border: 1px solid greenyellow;
+    <!--"селектор класса"-->
+}
+[type="submit"] {
+    background-color: aquamarine;
+    padding: 10px;
+    <!--"селектор атрибута"-->
+}
+
+#contacts {
+    margin-top: 30px;
+    padding: 10px;
+    border: 2px solid black;
+}
+
+#about, #contacts {
+    padding: 10px;
+    <!--"селектор групповой"-->
+}
+

@@ -1,0 +1,14 @@
+.button 
+            {
+                display:inline-block;
+                height:100px;
+                width:100px;
+                border-radius:10px;
+            }
+
+.trafficLight {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background: black;
+  }

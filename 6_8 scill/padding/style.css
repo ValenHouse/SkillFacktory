@@ -1,0 +1,94 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.main-section {
+    padding: 40px 0;
+}
+
+.fixed-container {
+    box-sizing: border-box;
+    margin: 0 auto;
+    padding: 50px 0;
+    max-width: 1240px;
+    background-color: aqua;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.block {
+    background-color: brown;
+    height: 100px;
+    margin: 20;
+    border-radius: 1rem;
+    border: 1px solid black;
+}
+
+.text {
+    color: azure;
+    margin: 0;
+    line-height: 100px;
+    text-align: center;
+    padding: 0 5px;
+    margin: 0;
+}
+
+body {
+    margin: 0;
+}
+    .name-text {
+        font-weight: bold;
+    }
+    
+    .prof-text {
+        color: rgb(201, 29, 29);
+    }
+    
+    .city-text {
+        font-style: italic;
+    }
+
+.list {
+    font-size: 50px;
+}
+
+.exemple {
+    width: 30px;
+    height: 100px;
+    background: red;
+    box-sizing: border-box;
+    margin: 10px;
+    padding: 20px;
+    border: 5px solid black;
+    }
+
+* body {
+    background: yellow;
+} *
+
+.exemple_block {
+    width: 30px;
+    height: 100px;
+    background: red;
+    box-sizing: border-box;
+    margin: 10px;
+    padding: 20px;
+    border: 5px solid black;
+    }
+
+footer p::before {
+    color: violet;
+    content: "Подсказка";
+    background-color: black;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    padding: 10px;
+    opacity: 0;
+}
+
+p:hover::before {opacity: 1;}

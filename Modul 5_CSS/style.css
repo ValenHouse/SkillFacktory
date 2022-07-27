@@ -1,0 +1,97 @@
+dialog {
+  width: 300px;
+}
+
+dialog::backdrop {
+  background: rgba(0,0,0,0.7);
+}
+
+.food {
+    color: red;
+  }
+  .household {
+    color: green;
+  }
+  .vet {
+    color: blue;
+  }
+  .not-bought {
+    background: red;
+    color: white;
+  }
+  #Sofa {
+    color: orange:
+    } 
+    p {
+      max-width: 500px;
+      position: relative;
+    }
+
+    p::before {
+      content: "Текст перед основным инфо с помощью псевдоэлемента, выделить нельзя, можно применять против копипаст";
+      color: white;
+      background-color: blue;
+      position: absolute;
+      top: 100%;
+      left: 0;
+      padding: 10px;
+      opacity: 0;
+    }
+
+    p::after {
+      content: "Текст после основным инфо, выделить нельзя, можно применять против копипаст или описания";
+      color: red;
+    }
+
+    p:hover::before {opacity: 1;}
+
+    ul {
+      list-style: none;
+      counter-reset: numbers;
+      font-size: 18px;
+    }
+
+    li::before {
+      counter-increment: numbers;
+      content: "0" counter(numbers);
+      font-size: 30px;
+      color: green;
+    }
+
+    a:hover::after {
+      transition: 0.3s;
+      transform: translateX(20px);
+    }
+
+    p::first-letter {
+      color: darkred;
+    }
+
+    p::first-line {
+      color: turquoise;
+    }
+
+    input {
+      margin-top: 20px;
+      display: block;
+      font-size: 20px;
+    }
+
+    input::placeholder {
+      color: lightgreen;
+      transition: 0.5s;
+    }
+
+    input:focus::placeholder {
+      color: transparent;
+      transition: 0.5s;
+    }
+
+    p::selection {
+      color: white;
+      background-color: brown;
+    }
+
+    ul li::marker {
+      color: chocolate;
+    }

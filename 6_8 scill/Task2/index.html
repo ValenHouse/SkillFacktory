@@ -2,21 +2,34 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>JS-Start. 2 задача</title>
+    <meta http-equiv="X-UA-Compatible">
+    <title>JS-Start.2 задача</title>
 </head>
 <body>
+  <div id="welcome"></div>
 <p id="consoleLog">console.Log</p>
 <code>
     Пример использования команды console.log
 </code>
-<p id="alert">alert()</p>
+<p id="alert">Alert()</p>
 <code>
-  Добавил  alert
+  Пример alert
 </code>
 <p id="prompt">Prompt()</p>
 <code>
   Пример prompt
 </code>
+<b>
+  print(float(input('℃ to ℉ = ')) * (9 / 5) + 32))
+</b>
+
+<p>
+  <label>Fahrenheit</label>
+  <input id="inputFahrenheit" type="number" placeholder="Fahrenheit" oninput="temperatureConverter(this.value)" onchange="temperatureConverter(this.value)">
+</p>
+<p>
+  Celcius: <span id="outputCelcius"></span>
+</p>
 <script src="script.js"></script>
 </body>
 </html>

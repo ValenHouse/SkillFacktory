@@ -1,1 +1,1 @@
-console.log('Привет, мир!');
+console.log('What have you seen?');

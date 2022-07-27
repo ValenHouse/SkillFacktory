@@ -4,16 +4,41 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Тест моей первой веб-страницы</title>
+    <title>Изучаем синтаксис CSS</title>
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <!--"Это не видно Копируем из учебного материала"-->
 <body>
+    <a href="https://ya.ru" id="testTextField3" class="more">Перейти на Яндекс</a>
     <header>
         <a href="#">Главная</a>
         <a href="pages/about.html">О нас</a>
         <a href="pages/contacts.html">Контакты</a></header>
     <main>
-        <h1>Моя первая веб-страница</h1>
+        <h1>Применяем разные стили CSS</h1>
+        <section id="about">
+            <h2 id="testTextField1">Проба пера со стилями CSS, кликай</h2>
+            <h2 id="testTextField2">Проба пера со стилями CSS, не попал!</h2>
+            <p>
+                Мебель для ванной комнаты серии модерн — новейший подход к оформлению помещений. 
+                Направление объединяет несколько стилей, 
+                поэтому для изделий из коллекции характерны комбинация прямых линий с фигурными элементами, 
+                асимметрия, всевозможные открытые ниши, хромированные и крупные по размеру ручки круглой формы. 
+                Мебель гармонично смотрится в помещениях, оформленных в разных стилях: прованс, классика, современный или ретро.
+                <a href="Lorem ipsum dolor.html" class="more">Подробнее</a>
+            </p>
+        </section>
+
+        <section id="contacts">
+            <h2>Контакты</h2>
+            <form action="">
+                <label for="message">Сообщение</label>
+                <input type="text" name="message" id="message">
+            </form>
+            
+            <button type="submit">Отправка</button>
+        </section>
+
         <h2>Про меня</h2>
         <p>Меня зовут Вася. Я работаю <strong>маркетологом</strong>. Решил получше узнать смежную профессию, чтобы разобраться как устроен веб.</p>
         <p>Живу в Питере. Люблю кататься на велосипеде.</p>
@@ -22,6 +47,7 @@
     </main>
     <footer>
         <span>&copy;&nbsp;Skillfactory</span>
-    </footer>   
+    </footer>
+    <script src="js/script.js"></script>   
 </body>
 </html>

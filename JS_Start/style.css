@@ -1,0 +1,90 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 400px;
+    background-color: #d0d1d3;
+    background: url('https://wowitaly.ru/wp-content/uploads/2021/08/%D0%A0%D0%B8%D0%BC%D1%81%D0%BA%D0%B8%D0%B9-%D1%84%D0%BE%D1%80%D1%83%D0%BC-%D1%80%D0%B5%D0%BA%D0%BE%D0%BD%D1%81%D1%82%D1%80%D1%83%D0%BA%D1%86%D0%B8%D1%8F-870x480.jpg');
+    background-size: cover;
+}
+
+h1 {
+    color: red;
+    font-size: 4rem;
+    font-family:'Times New Roman', Times, serif;
+}
+
+.news {
+    background-color: #fff;
+    padding: 50px 0px 32px;
+}
+
+article {
+    width: 768px;
+    margin: 0 auto 32px;
+    padding: 6px 15px;
+    border-bottom: 1px solid rgb(128, 128, 128)
+}
+
+article a {
+    color:rgb(33, 37, 41);
+    text-decoration: none;
+}
+
+article a:hover {
+    color: #0085a1;
+}
+
+article h2 {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin-bottom: 5px;
+}
+
+.article-meta {
+    color: rgb (134, 142, 150);
+    margin-bottom: 5px;
+}
+
+article img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+}
+
+p:nth-child(even) {
+    color: olive;
+}
+
+q::before {
+    content: "NEW";
+    color: red;
+}
+footer {
+    padding-top: 20px;
+    padding-bottom: 60px;
+    text-align: center;
+}
+
+footer .links {
+    margin-bottom: 50px;
+}
+
+footer .links >a {
+    color: #636b6f;
+    padding: 0px 25px;
+    font-size: 13px;
+    font-weight: 600;
+    letter-spacing: .1rem;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+.copyright {
+    color: rgb (108, 117,125);
+    font-family: 'Times New Roman', Times, serif;
+}

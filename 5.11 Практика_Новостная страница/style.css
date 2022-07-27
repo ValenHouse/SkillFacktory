@@ -1,20 +1,45 @@
-body{
-    margin: 0;
-    padding: 0;
-}
-
 header{
     display: flex;
     align-items: center;
     justify-content: center;
     height: 400;
-    background: url('https://cdn.pixabay.com/photo/2022/03/01/06/14/plum-7040627__340.jpg') bottom no-repeat;
+       background: url('https://cdn.pixabay.com/photo/2022/03/01/06/14/plum-7040627__340.jpg') bottom no-repeat;
     background-size: cover;
 }
 
+body {
+    margin: 0;
+    padding: 0;
+}
+
 h1{
-    color: rgb(182, 236, 56);
+    color: #c6be94;
     font-size: 4rem;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+footer {
+    padding-top: 20px;
+    padding-bottom: 60px;
+    text-align: center;
+}
+
+footer .links {
+margin-bottom: 50px;
+}
+
+footer .links a {
+color: #636b6f;
+padding: 0 25px;
+font-size: 13px;
+font-weight: 600;
+letter-spacing: .1rem;
+text-decoration: none;
+text-transform: uppercase;
+}
+
+.copyright {
+    color: rgb(108,117,125);
     font-family: 'Times New Roman', Times, serif;
 }
 
@@ -63,7 +88,7 @@ footer{
 footer .links{
     margin-bottom: 50;
 }
-footer .links > a{
+footer .links a{
 color: #636363;
 padding: 0 25;
 font-size: 13;

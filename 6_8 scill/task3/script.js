@@ -1,16 +1,16 @@
-const trafficLightEl = document.querySelector('#trafficLight');
+var redlight = document.getElementById("redlight");
+var yellowlight = document.getElementById("yellowlight");
+var greenlight = document.getElementById("greenlight");
 
-function makeGreen() {
-    trafficLightEl.style.background = ('green');
-    trafficLightEl.removeEventListener('click', makeGreen);
-    trafficLightEl.addEventListener('click', makeYellow);
-}
-
-trafficLightEl.addEventListener('click', makeGreen);
-
-function handleClick() {
-    console.log('click');
+function start() {
+  if (redlight.classList.contains("on")) {
+    redlight.classList.remove("on"); //switch off red
+    yellowlight.classList.add("on"); //switch on yellow
+  } else if (yellowlight.classList.contains("on")) {
+    yellowlight.classList.remove("on"); //switch off yellow
+    greenlight.classList.add("on"); //switch on green   
+  } else if (greenlight.classList.contains("on")) {
+    greenlight.classList.remove("on"); //switch off green
+    redlight.classList.add("on"); //switch on red
   }
-  buttons.forEach((button) => {
-    button.addEventListener('click', handleClick);
-  });
+}

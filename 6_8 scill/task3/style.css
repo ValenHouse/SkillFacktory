@@ -1,6 +1,35 @@
-#trafficLight {
+.trafficLight {
     width: 100px;
     height: 100px;
     border-radius: 50%;
     background: black;
+  }
+  .light {
+    width: 40px;
+    height: 40px;
+    border-radius: 40px;
+    margin: 10px;
+  }
+  .light.red {
+    background: #520202;
+  }
+  .light.red.on {
+    background: #ff0000;
+  }
+  .light.yellow {
+    background: #3F4A00;
+  }
+  .light.yellow.on {
+    background: #ffff00;
+  }
+  .light.green {
+    background: #044A00;
+  }
+  .light.green.on {
+    background: #008000;
+  }
+  button {
+    width: 75px;
+    height: 30px;
+    margin: 10px;
   }
