@@ -1,40 +1,92 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <title>Генератор случайных пользователей</title>
-        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
-              integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-        <link href="https://fonts.googleapis.com/css2?family=Open+Sans" rel="stylesheet">
-        <link rel="stylesheet" href="style.css" type="text/css"/>
-    </head>
-    <body>
-    <div class="container">
-        <div class="row game-card align-items-center">
-            <div class="col col-md-8 offset-md-2">
-                <div class="card text-center">
-                    <div class="card-header">
-                        <p class="m-0">Результат генерации</p>
-                    </div>
-                    <div class="card-body">
-                                <h3 class="card-title">Фамилия: <span id="surnameOutput"></span></h3>
-                                <h3>Имя: <span id="firstNameOutput"></span></h3>
-                                <h3>Отчество: <span id="patronymicOutput"></span></h3>
-                                <p>
-                                    <span id="genderOutput">пол</span>
-                                    <span>, </span>
-                                    <span id="professionOutput">профессия</span>
-                                    <span>, </span>
-                                    <span id="birthDateOutput">дата рождения</span>
-                                </p>
-                            </div>
-                        </div>
-                            <button type="button" class="col btn btn-outline-success" id="reboot"><p>Обновить</p></button>
-                            <button type="button" class="col btn btn-outline-danger" id="clear"><p>Сброс</p></button>
-                    </div>
-                </div>
-            </div>
-    <script src="personGenerator.js"></script>
-    <script src="init.js"></script>
-    </body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/index.css" />
+    <title>Экзотические фрукты</title>
+  </head>
+
+  <body>
+    <main>
+      <!-- ПАНЕЛЬ УПРАВЛЕНИЯ -->
+      <section class="panel__wrapper">
+        <h2 class="wrapper__title">⚙️ Панель управления</h2>
+
+        <div class="panel__devtools">
+          <!-- TODO: при нажатии элементы массива перемешиваются в случайном порядке -->
+          <button class="shuffle__btn line">Перемешать</button>
+
+          <div class="line">
+            <!-- пользователь указывает нижнюю границу weight -->
+            <div>min weight:</div>
+            <input class="minweight__input" />
+          </div>
+
+          <div class="line">
+            <!-- пользователь указывает верхнюю границу weight -->
+            <div>max weight:</div>
+            <input class="maxweight__input" />
+          </div>
+
+          <!-- TODO: при нажатии элементы массива фильтруются в пределах [minweight, maxweight] -->
+          <button class="filter__btn line">Фильтровать</button>
+
+          <div class="line">
+            <span>Алгоритм:</span>
+            <!-- TODO: указывается название алгоритма сортировки -->
+            <span class="sort__kind"></span>
+          </div>
+
+          <!-- TODO: при нажатии происходит смена алгоритма сортировки -->
+          <button class="sort__change__btn line">Сменить алгоритм</button>
+          
+          <div class="line">
+            <span>Сортировать по:</span>
+            <!-- TODO: указывается название алгоритма сортировки -->
+            <span class="sort__value"></span>
+          </div>
+
+          <button class="sort__changeValue__btn line">Сменить параметр</button>
+          <button class="sort__changeSortDirection__btn line">По возрастанию</button>
+
+          <!-- TODO: при нажатии происходит сортировка и рассчет времени сортировки -->
+          <button class="sort__action__btn line">Сортировать</button>
+
+          <div class="line">
+            <span>Время сортировки: </span>
+            <!-- TODO: выводится время сортировки -->
+            <span class="sort__time"></span>
+          </div>
+
+          <!-- пользователь указывает значения характеристик будущего фрукта -->
+          <div class="line">
+            <div>kind:</div>
+            <input class="kind__input" />
+          </div>
+
+          <div class="line">
+            <div>color:</div>
+            <input class="color__input" />
+          </div>
+
+          <div class="line">
+            <div>weight:</div>
+            <input class="weight__input" />
+          </div>
+
+          <button class="add__action__btn line">Добавить фрукт</button>
+        </div>
+      </section>
+
+      <!-- СПИСОК ЭКЗОТИЧЕСКИХ ФРУКТОВ -->
+      <section class="fruits__wrapper">
+        <h2 class="wrapper__title">Список экзотических фруктов</h2>
+        <ul class="fruits__list">
+        </ul>
+      </section>
+    </main>
+
+    <script src="./js/index.js"></script>
+  </body>
 </html>
