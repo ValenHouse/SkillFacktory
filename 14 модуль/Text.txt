@@ -1,0 +1,127 @@
+https://github.com/Senya10p/senya10ptest.github.io
+
+Сеня - молодец!!!
+
+https://github.com/Senya10p?tab=repositories
+
+Задание: Строим систему авторизации на нашем сайте:
+
+if (isset($login) && isset($password)) {
+    if(true == сheckPassword($login, $password)) {
+        $login = $_SESSION['user'];
+    }
+}
+
+I. Для начала создайте несколько полезных функций и выделите их в отдельный файл:
+
+Функция getUsersList() пусть возвращает массив всех пользователей и хэшей их паролей
+Функция existsUser($login) проверяет - существует ли пользователь с заданным логином?
+Функция сheckPassword($login, $password) пусть возвращает true тогда, когда существует пользователь с указанным логином и введенный им пароль прошел проверку
+II. Добавьте функцию getCurrentUser() которая возвращает либо имя вошедшего на сайт пользователя, либо null
+
+III. Добавьте к проекту страничку login.php, которая:
+
+ЕСЛИ пользователь уже вошел (см. пункт 2), ТО редирект на главную страницу.
+ЕСЛИ пользователь не вошел - отображает форму входа.
+ЕСЛИ введены данные в форму входа - проверяем им (см. пункт 1.3) и ЕСЛИ проверка прошла, ТО запоминаем информацию о вошедшем пользователе.
+function.php
+
+<?php
+// Переменные для функций
+$login = htmlspecialchars($_POST['login']);
+$password = htmlspecialchars($_POST['password']);
+
+// пусть возвращает массив всех пользователей и хэшей их паролей
+function getUsersList() {
+    return [
+    'Федор' => '$2y$10$5JPdetidi0P325Qfhx3GZ.gdmPX1d4C88BgdDbDyt1a/TmJtiK1nW', 
+    // пароль 123456, если $fedorUser из send.php в value добавить, то же самое будет, что и прямая вставка?
+    ];
+}
+
+// проверяет - существует ли пользователь с заданным логином?
+function existsUser($login) {
+    return array_key_exists($login, getUsersList());
+}
+
+//возвращает true тогда, когда существует пользователь с указанным логином и введенный им пароль прошел проверку
+function сheckPassword($login, $password) {
+    if(false != existsUser($login) && password_verify($password, in_array($password, getUsersList()))) {
+        return true;
+    }
+}
+
+//возвращает либо имя вошедшего на сайт пользователя, либо null
+// весь код не верный ибо я не знаю что творю, но прикладываю свои попытки
+function getCurrentUser(){
+    if(сheckPassword($login, $password) == true){
+        return $_SESSION['user'];
+    } else {
+        return null;
+    }
+}
+
+/*function getCurrentUser() {
+    if(isset($_SESSION['login'])) {
+        return $_SESSION['login'];
+    } else {
+        return null;
+    }
+}*/
+login.php
+
+<?php
+session_start();
+include __DIR__ . '/function.php';
+
+ini_set('display_errors', '1');
+ini_set('display_startup_errors', '1');
+error_reporting(E_ALL);
+
+
+
+// ЕСЛИ пользователь уже вошел (см. пункт 2), ТО редирект на главную страницу
+if(null !== getCurrentUser()) {
+    header('Location: http://localhost/authorization_system/index.php');
+} else {
+    
+// ЕСЛИ пользователь не вошел - отображает форму входа
+?>
+    <form action="/authorization_system/login.php" method="post" enctype="multipart/form-data"> 
+        Логин: <input type="text" name="login">
+        Пароль: <input type="password" name="password">
+        <button type="submit">Войти</button>
+    </form>
+<?php
+} 
+
+// ЕСЛИ введены данные в форму входа - проверяем им (см. пункт 1.3) и ЕСЛИ проверка прошла, ТО запоминаем информацию о вошедшем пользователе
+if (isset($login) && isset($password)) {
+    if(true == сheckPassword($login, $password)) {
+        $login = $_SESSION['user'];
+    }
+}
+send.php
+
+$fedorUser = password_hash('123456', PASSWORD_DEFAULT);
+index.php
+
+<?php
+session_start();
+include __DIR__ . '/function.php';
+
+?>
+<!DOCTYPE HTML>
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <title>Личный кабинет</title>
+</head>
+<body>
+<?php 
+if (null !== getCurrentUser()) {
+  echo 'Привет' . getCurrentUser();
+}
+?>
+</body>
+</html>
