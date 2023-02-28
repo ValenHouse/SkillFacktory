@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Генератор случайных пользователей</title>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+              integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans" rel="stylesheet">
+        <link rel="stylesheet" href="style.css" type="text/css"/>
+    </head>
+    <body>
+    <div class="container">
+        <div class="row game-card align-items-center">
+            <div class="col col-md-8 offset-md-2">
+                <div class="card text-center">
+                    <div class="card-header">
+                        <p class="m-0">Результат генерации</p>
+                    </div>
+                    <div class="card-body">
+                                <h3 class="card-title">Фамилия: <span id="surnameOutput"></span></h3>
+                                <h3>Имя: <span id="firstNameOutput"></span></h3>
+                                <h3>Отчество: <span id="patronymicOutput"></span></h3>
+                                <p>
+                                    <span id="genderOutput">пол</span>
+                                    <span>, </span>
+                                    <span id="professionOutput">профессия</span>
+                                    <span>, </span>
+                                    <span id="birthDateOutput">дата рождения</span>
+                                </p>
+                            </div>
+                        </div>
+                            <button type="button" class="col btn btn-outline-success" id="reboot"><p>Обновить</p></button>
+                            <button type="button" class="col btn btn-outline-danger" id="clear"><p>Сброс</p></button>
+                    </div>
+                </div>
+            </div>
+    <script src="personGenerator.js"></script>
+    <script src="init.js"></script>
+    </body>
+</html>
