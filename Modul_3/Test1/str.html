@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Моя первая веб-страница</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    
+                <h1>Шпаргалка по синтаксису разметки Markdown</h1>
+                              <p> Markdown оказался намного проще, чем HTML.</p>
+                    <p>   <b>Алексеев Сергей</b>, студент курса вебразработки:  </p>
+                    <img src="Images/1-markdown.jpg " alt="Шпаргалка по синтаксису разметки Markdown" width="50%">
+                        <p>
+                            <p><span>Дата публикации:</span>
+                                <span>16 апреля 2022</span></p>
+                            
+                                <p></p><span>Дата обновления:</span>
+                                <span>15 марта 2023</span></p>
+ 
+                                <p>Время выполнения: <span> Время бесценно </span></p>
+                        </p>
+ 
+                        <h2>  	 Маркдаун – облегченный язык разметки, созданный для написания, чтения, оформления веб-текстов.  </h2>  
+                        <p>  	 Частично или полностью язык поддерживается многими проектами:  </p>  
+                        <ul>  	<li> CMS и блог-платформами (Drupal, Ghost, Medium);</li>  	
+                                <li> крупнейшими хранилищами контента (GitHub, Microsoft Docs);</li>  	
+                                <li> мессенджерами (Telegram, Slack);</li>  	</ul>  
+
+                            <div class="matnav__block-deskt">
+                                <div class="matnav__container">
+                                    <span class="matnav__title">Оглавление:</span>
+                                    <div class="matnav__list">
+                                        
+                        <div class="matnav__item"> 
+                            <a class="matnav__link" href="#h2-0" data-toankor="matnav"> Заголовки и горизонтальные линии</a>
+                        </div>
+                    
+                        <div class="matnav__item"> 
+                            <a class="matnav__link" href="#h2-1" data-toankor="matnav"> Выделения текста</a>
+                        </div>
+                        
+                        <div class="matnav__item"> 
+                            <a class="matnav__link" href="#h2-3" data-toankor="matnav"> Ссылки и картинки</a>
+                        </div>
+                    
+                        <div class="matnav__item"> 
+                            <a class="matnav__link" href="#h2-4" data-toankor="matnav"> Цитаты и вставки кода</a>
+                        </div>
+                    
+                        <div class="matnav__item"> 
+                            <a class="matnav__link" href="#h2-5" data-toankor="matnav"> Таблицы и чек-боксы</a>
+                        </div>
+                    
+                        <div class="matnav__item"> 
+                            <a class="matnav__link" href="#h2-6" data-toankor="matnav"> Важно: экранирование</a>
+                        </div>
+                    
+                        <div class="matnav__item"> 
+                            <a class="matnav__link" href="#h2-7" data-toankor="matnav"> Инструменты для работы с маркдаун-разметкой</a>
+                        </div>
+                    
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>  
+                    <h2 id="h2-0" data-matnav-headline-element="h2"> Заголовки и горизонтальные линии</h2>  
+                    <p>  	 Заголовки H1–H6 выделяются в Markdown с помощью знаков решетки (диез/шарп). 
+                        Можно просто поставить нужное количество решеток в начале строки, чтобы указать уровень. 
+                        Или заключить строку с двух сторон по аналогии с HTML-тегами, кому как удобно.  
+                    </p>  
+                        <p>  		 # Это H1 # 	</p>  	
+                        <p>  		 ## Это H2 ##  	</p>  	
+                        <p>  		 ### Это H3 ### 	</p>  	
+                        <p>  		 #### Это H4 ####  	</p>  	
+                        <p>  		 ##### Это H5 #####  	</p>  	
+                        <p>  		 ###### Это H6 ###### 	</p>  
+                     
+                    <p>  	 Другой вариант: написать текст первого заголовка, затем нажать Enter и на следующей строке указать любое количество знаков «равно». 
+                        Аналогичным образом можно выделить H2, только использовать уже нужно дефисы. 
+                        Заголовки других уровней таким методом оформить нельзя.  
+                    </p>  
+                    <p>  	 Это H1 или Заголовок I  </p>  
+                    <p>  	 ===  </p>  
+                    <p>  	 Это H2 или Заголовок II  </p>  
+                    <p>  	 ---  </p>   
+                    <img width="730" alt="Синтаксис разметки Markdown" src="Images/" height="298" title="Синтаксис разметки Markdown" class="">  
+                    <p>  	 Если отделить последовательность дефисов пустой строкой, то H2 не будет. 
+                        Получится горизонтальная разделительная линия. 
+                        Ее можно оформить также с помощью звездочек или знака нижнего подчеркивания. 
+                        Количество символов и пробелов между ними роли не играет.
+                        &nbsp;А вот знак равенства работает только с заголовками H1, горизонтальные линии он не рисует:&nbsp;  
+                    </p>   
+                    <img width="730" alt="Синтаксис разметки Markdown" src="Images/" height="267" title="Синтаксис разметки Markdown" class="">  
+                    <div class="banner-content-promo banner-content-promo--red" data-banner-promo="">
+                                            <div class="banner-content-promo__content"> 
+                                                <span class="banner-content-promo__title">Делаем блоги для бизнеса и бренд-медиа</span>
+                                                <div class="banner-content-promo__desc">
+                                                    <p>            Интересно и эффективно         </p>
+                                                </div>
+                                                <a class="banner-content-promo__button" href="https://texterra.ru/services/kontent-marketing/?utm_source=blog&amp;utm_medium=cpc&amp;utm_campaign=adv_block"> 
+                                                    <span>Подробнее</span>
+                                                    <svg class="banner-content-promo__button-icon">
+                                                        <use xlink:href="#icon-arrow-link"></use>
+                                                    </svg>
+                                                </a>
+                                            </div>
+                                            <div class="banner-content-promo__img"> 
+                                                <img src="/upload/iblock/f5f/70jt0vnuz8fazlypanfbytucug99cbvt/brand_media.webp" alt="Делаем блоги для бизнеса и бренд-медиа" loading="lazy">
+                                            </div>
+                                        </div>
+                                        <h2 id="h2-1" data-matnav-headline-element="h2"> Выделения текста</h2>  
+                                        <p>  	 Форматирование курсивом и жирным точно есть во всех инструментах, 
+                                            где другие функции Markdown могут быть ограничены. 
+                                            Синтаксис выделения текста и расставления акцентов:  
+                                        </p>  
+                                        <p>  	 __Жирный__  </p>  
+                                        <p>  	 **Тоже жирный**  </p>  
+                                        <p>  	 *Курсив*  </p>  
+                                        <p>  	 _Тоже курсив_  </p>  
+                                        <p>  	 ~~Зачеркнутый~~  </p>  
+                                        <p>  	 Можно легко комбинировать эти способы выделения.  </p>   
+                                        <img width="730" alt="Синтаксис разметки Markdown" src="Images/" height="223" title="Синтаксис разметки Markdown" class="">  
+                                        
+                                        <h2 id="h2-3" data-matnav-headline-element="h2"> Ссылки и картинки</h2>  
+                                        <p>  	 Чтобы поставить гиперссылку без анкора, нужно взять URL в угловые скобки. С e-mail – аналогично.  </p>  
+                                        <p>  	 Если вставлять с анкором, то тогда текст ссылки заключается в квадратные скобки, а адрес страницы – в круглые. 
+                                            Рядом с URL можно прописать тайтл, его объявляют в кавычках (он тоже остается внутри круглых скобок).  </p>  
+                                            <p>  	 Это [ссылка]( "Агентство TexTerra") с тайтлом.  </p>  
+                                            <p>  	 [Эта ссылка](<a href="http://example.net/">http://example.net/</a>) без заголовка.  </p>  
+                                            <p>  	 &lt;<a href="https://texterra.ru/>">https://texterra.ru/&amp;gt</a>; – а это безанкорная ссылка.  </p>   
+                                            <img width="730" alt="Синтаксис разметки Markdown" src="Images/" height="225" title="Синтаксис разметки Markdown" class="">  
+                                            <p>  	 Чтобы длинные URL не затрудняли чтение и написание документа Markdown, есть вариант присвоения каждой ссылке определенных ID (меток/переменных). 
+                                                Можно сделать это несколькими способами:  </p>  
+                                                <p>  	 Ссылаемся на [блог TexTerra][tt-blog-link] через ID. Объявляем метку позже по аналогии со сносками. 
+                                                    Цифрами обозначить тоже можно: [Google][1], [Yandex][2]  </p>  
+                                                    <p>  	 Еще можно так встраивать ссылки: [TexTerra] []  </p>  
+                                                    <p>  	 [tt-blog-link]: /blog "Блог про интернет-маркетинг"  </p>  
+                                                    <p>  	 [1]: google.com 'Сайт Google'  </p>  <p>  	 [2]: yandex.ru (Сайт «Яндекса»)  </p>  
+                                                    <p>  	 [TexTerra]:  </p>   
+                                                    <img width="730" alt="Синтаксис разметки Markdown" src="Images/" height="185" title="Синтаксис разметки Markdown" class="">  
+ </div>
+     
+                    
+                    <div class="article-container__rigth-sticky-container">
+                        <div class="article-container__rigth-sticky-block top-pos" data-rigth-sticky-block="">
+                            <div class="article-container__button-matnav button-matnav" data-matnav-open="">
+                                <svg class="button-matnav__icon">
+                                    <use xlink:href="#icon-matnav-blog"></use>
+                                </svg><span class="button-matnav__title">Оглавление</span>
+                            </div>
+        
+                                                
+                                                
+                                                    <div class="article-container__banner-promo-sidebar">
+                                    <div class="banner-promo-sidebar">
+                                        <div class="banner-promo-sidebar__content">
+                                            <div class="banner-promo-sidebar__title"> 
+                                                <span>Напишем вам тексты</span>
+                                            </div>
+                                            <div class="banner-promo-sidebar__desc">
+                                                <p>
+            для сайтов, блогов и соцсетей
+        </p>                                    </div>
+                                            <a class="banner-promo-sidebar__button button-default" href="https://texterra.ru/services/kontent-marketing/napisanie-tekstovogo-kontenta.html?utm_source=site&amp;utm_medium=cpc&amp;utm_campaign=adv_block_side">
+                                                <span>Подробнее</span>
+                                            </a>
+                                        </div>
+                                        <div class="banner-promo-sidebar__img">
+                                            <img src="/upload/iblock/1c0/h05vxfhlth01xc8f1461ca8bfhh4lzox/banner_promo_sidebar_1.png" alt="Напишем вам тексты" loading="lazy">
+                                        </div>
+                                    </div>
+                                </div>
+                                                
+        
+                        </div>
+                    </div>
+                </div>        
+            </div>
+        </div>
+
+        <div class="section-default section-default--mb50 page__about-article-block">
+            <div class="container-default">
+                <div class="about-article-block">
+                    <div class="about-article-block__date-block">
+                                            <div class="about-article-block__date-item">
+                                <span class="about-article-block__date-title">Дата публикации:</span>
+                                <span class="about-article-block__date">14 января 2020</span>
+                            </div>
+                            <div class="about-article-block__date-item">
+                                <span class="about-article-block__date-title">Дата обновления:</span>
+                                <span class="about-article-block__date">23 ноября 2022</span>
+                            </div>
+                                    </div>
+                    <div class="about-article-block__author"> 
+                        <div class="about-article-block__author-img" style="background-image: url('/upload/resize_cache/iblock/dc3/40_40_2/Foto-500kh500.jpg')"></div>
+                        <div class="about-article-block__author-desc-block"> 
+                            <a class="about-article-block__author-name" href="/blog/author_ivan-ivanichev/">
+                                Иван Иваничев                    </a>
+                                            </div>
+                    </div>
+                    <div class="about-article-block__views">
+                        <svg class="about-article-block__views-icon">
+                            <use xlink:href="#icon-eye-blog"></use>
+                        </svg><span class="about-article-block__views-number">65 482</span>
+                    </div>
+                    <div class="about-article-block__time"> 
+                        <svg class="about-article-block__time-icon"> 
+                            <use xlink:href="#icon-time-blog"></use>
+                        </svg>
+                        <span class="about-article-block__time-text">
+                            Время чтения: <span>7 минут</span>
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+</body>
+</html>
